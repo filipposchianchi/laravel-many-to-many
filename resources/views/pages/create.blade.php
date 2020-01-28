@@ -28,4 +28,4 @@
         <input type="submit" value="CREATE" name="">
     </form>
 
-  @endsection
+@endsection

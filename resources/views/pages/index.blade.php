@@ -7,11 +7,15 @@
         @foreach ($employees as $employee)
 
         <li>
-            <h5>[{{$employee -> id}}] {{$employee -> name}}  {{$employee -> lastname}}</h5>
+            <h5>[{{$employee -> id}}] {{$employee -> name}}  {{$employee -> lastname}} 
+                <a href="{{route("employee.edit", $employee -> id)}}"> EDIT</a>
+                <a href="{{route("employee.destroy", $employee -> id)}}"> DELETE</a>
+            </h5>
+            
             <ul>
                 @foreach ($employee -> tasks as $task)
                     <li>
-                        {{$task -> title}}
+                    {{$task -> title}} 
                     </li>
                 @endforeach
             </ul>
