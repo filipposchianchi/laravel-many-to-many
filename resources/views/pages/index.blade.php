@@ -17,6 +17,7 @@
                 @foreach ($employee -> tasks as $task)
                     <li>
                     {{$task -> title}} 
+                    <a href="{{route("employee.remove.task", [$employee -> id, $task -> id])}}">X</a>
                     </li>
                 @endforeach
             </ul>

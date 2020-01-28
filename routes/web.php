@@ -23,5 +23,8 @@ Route::get("/employee/{id}","EmployeeController@destroy")-> name("employee.destr
 
 Route::get("/employee/{id}/show","EmployeeController@show")-> name("employee.show");
 
+Route::get("/employee/{idp}/remove/task/{idt}","ExtraController@removeTask")-> name("employee.remove.task");
+
+
 
 
