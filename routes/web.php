@@ -21,4 +21,7 @@ Route::post("/employee/{id}/update","EmployeeController@update")-> name("employe
 
 Route::get("/employee/{id}","EmployeeController@destroy")-> name("employee.destroy");
 
+Route::get("/employee/{id}/show","EmployeeController@show")-> name("employee.show");
+
+
 

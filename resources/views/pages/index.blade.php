@@ -10,6 +10,7 @@
             <h5>[{{$employee -> id}}] {{$employee -> name}}  {{$employee -> lastname}} 
                 <a href="{{route("employee.edit", $employee -> id)}}"> EDIT</a>
                 <a href="{{route("employee.destroy", $employee -> id)}}"> DELETE</a>
+                <a href="{{route("employee.show", $employee -> id)}}"> SHOW</a>
             </h5>
             
             <ul>
